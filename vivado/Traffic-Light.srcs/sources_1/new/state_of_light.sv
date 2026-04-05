@@ -50,8 +50,8 @@ module state_of_light(
                 else             next_state = NORMAL;
             end
             
-            EMER_1: next_state = emer_1 ? EMER_1 : NORMAL;
-            EMER_2: next_state = emer_2 ? EMER_2 : NORMAL;
+            EMER_1: next_state = emer_1 ? EMER_1 : (emer_2) ? EMER_2 : NORMAL; 
+            EMER_2: next_state = emer_2 ? EMER_2 : (emer_1) ? EMER_1 : NORMAL;
             default: next_state = NORMAL;
         endcase
     end
