@@ -17,6 +17,15 @@ The controller manages two sets of traffic lights with the following default tim
    * EMER_1: Prioritizes Road 1 (Road 1 stays Green, Road 2 stays Red).
    * EMER_2: Prioritizes Road 2 (Road 2 stays Green, Road 1 stays Red).
 
+## FSM of traffic light
+![my_sreenshot](https://github.com/nghitrung/Crossroad-Traffic-Light/blob/main/images/FSM_traffic_light.png)
+
+## FSM of state light
+![my_sreenshot](https://github.com/nghitrung/Crossroad-Traffic-Light/blob/main/images/Screenshot%202026-04-05%20233028.png)
+
+## FSM of timer 
+![my_sreenshot](https://github.com/nghitrung/Crossroad-Traffic-Light/blob/main/images/FSM_timer.png)
+
 ## 📂 File Structure
 * `top_module.sv`: The main system wrapper integrating the state controller and light modules.
 * `state_of_light.sv`: Global state controller managing transition between Normal and Emergency modes.
